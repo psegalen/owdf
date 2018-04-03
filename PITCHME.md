@@ -13,8 +13,8 @@ Pierre Segalen
 ### React
 
 * Composants
-* Etat local
-* JSX (balises dans JS)
+* Etat local / composant
+* JSX (balises dans le JS)
 * DOM virtuel
 
 ---?image=images/VirtualDOM.png&size=auto 70%
@@ -59,19 +59,31 @@ class Clock extends React.Component {
 ReactDOM.render(<Clock />, document.getElementById("root"));
 ```
 
-@[31](Rendu en JSX d'un composant "Clock".)
-@[1](Déclaration du composant.)
-@[2-5](Initialisation de l'état local.)
-@[7-9](Cycle de vie, exécuté après le premier rendu.)
-@[11-13](Cycle de vie, exécuté avant la suppression de l'instance.)
-@[15-19](Appelé dans le setInterval déclaré dans componentDidMount.)
-@[21-28](Rendu du composant.)
+@[31](Rendu en JSX d'un composant Clock)
+@[2-5](Initialisation de l'état local)
+@[7--13](Cycle de vie de l'instance du composant)
+@[15-19](Appelé dans le setInterval déclaré dans componentDidMount)
+@[21-28](Rendu du composant)
 
 ---
 
 ### Clock
 
 [Démo](https://codepen.io/gaearon/pen/amqdNA?editors=0010)
+
+---
+
+### ⚠️ Synchronisation des états
+
+Plusieurs composants peuvent partager une données
+
+Exemple, site de e-commerce :
+
+* Bouton "Ajout panier"
+* Bouton "Panier header"
+* Page "Panier"
+
+N'utiliser que les états locaux = nécessité de les synchroniser
 
 ---?image=images/OneWayDataFlow_state.png&size=auto 80%
 
@@ -91,14 +103,6 @@ ReactDOM.render(<Clock />, document.getElementById("root"));
 
 ---
 
-### Todo list
-
-[Démo](http://localhost:3000)
-
----?image=images/OneWayDataFlow_actions.png&size=auto 80%
-
----
-
 ### Middlewares Redux
 
 * Logs
@@ -109,6 +113,14 @@ ReactDOM.render(<Clock />, document.getElementById("root"));
   * `redux-saga`
   * `redux-observable`
   * `...`
+
+---
+
+### Todo list
+
+[Démo](http://localhost:3000)
+
+---?image=images/OneWayDataFlow_actions.png&size=auto 80%
 
 ---
 
@@ -133,8 +145,11 @@ const pingEpic = action$ =>
 
 * Modularité
   * Maintenabilité
-  * Evolutivité
   * Testabilité
 * Flexibilité
   * 100% agile
 * ❤️ `react-native`
+
+---?image=images/OneWayDataFlow_questions.png&size=auto 80%
+
+### Questions
