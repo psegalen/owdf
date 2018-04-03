@@ -11,3 +11,4 @@ highlight : atom-one-light
 transition : none
 published : true
 footnote : "@psegalen - One-Way Data Flow"
+vertical-center : false

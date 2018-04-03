@@ -19,6 +19,8 @@ Pierre Segalen
 
 ---?image=images/VirtualDOM.png&size=auto 80%
 
+[src: https://redux.js.org/](https://redux.js.org/)
+
 ---
 
 ### React
@@ -84,7 +86,7 @@ ReactDOM.render(<Clock />, document.getElementById("root"));
 
 ---?image=http://jonnyreeves.co.uk/images/2016/redux-middleware/redux-with-middleware.png&size=80% auto
 
-[source: http://jonnyreeves.co.uk/2016/redux-middleware/](http://jonnyreeves.co.uk/2016/redux-middleware/)
+[src: http://jonnyreeves.co.uk/2016/redux-middleware/](http://jonnyreeves.co.uk/2016/redux-middleware/)
 
 ---
 
