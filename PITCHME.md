@@ -17,7 +17,7 @@ Pierre Segalen
 * JSX (balises dans JS)
 * DOM virtuel
 
----?image=http://arqex.com/wp-content/uploads/2015/02/trees.png.png&size=auto 80%&color=white
+---?image=images/Virtual_DOM.png&size=auto 80%
 
 ---
 
