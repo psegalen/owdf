@@ -118,7 +118,7 @@ N'utiliser que les états locaux = nécessité de les synchroniser
 
 ### Todo list
 
-[Démo](http://localhost:3000)
+[Démo](https://codesandbox.io/s/github/reactjs/redux/tree/master/examples/counter)
 
 ---?image=images/OneWayDataFlow_actions.png&size=auto 80%
 
@@ -150,6 +150,6 @@ const pingEpic = action$ =>
   * 100% agile
 * ❤️ `react-native`
 
----?image=images/OneWayDataFlow_questions.png&size=auto 80%
+---?image=images/OneWayDataFlow_questions.png&size=auto 60%
 
 ### Questions
