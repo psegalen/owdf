@@ -4,11 +4,7 @@ Pierre Segalen
 
 @fa[twitter gp-contact](@psegalen)
 
----
-
 ---?image=images/OneWayDataFlow.png&size=auto 80%
-
----
 
 ---?image=images/OneWayDataFlow_render.png&size=auto 90%
 
