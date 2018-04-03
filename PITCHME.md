@@ -19,7 +19,7 @@ Pierre Segalen
 
 ---?image=images/VirtualDOM.png&size=auto 80%
 
-[src: https://redux.js.org/](https://redux.js.org/)
+<span style="font-style: italic; color:#333; font-size:30px">src: https://redux.js.org</span>
 
 ---
 
@@ -81,12 +81,13 @@ ReactDOM.render(<Clock />, document.getElementById("root"));
 
 * Etat applicatif
 * Découpé en sous-états appelés "Reducers"
-* Reducer = fonction pure `(store, action) => store`
+* Reducer = fonction pure
+  * `(store, action) => store`
 * Données immutables
 
 ---?image=http://jonnyreeves.co.uk/images/2016/redux-middleware/redux-with-middleware.png&size=80% auto
 
-[src: http://jonnyreeves.co.uk/2016/redux-middleware/](http://jonnyreeves.co.uk/2016/redux-middleware/)
+<span style="font-style: italic; color:#333; font-size:30px">src: http://jonnyreeves.co.uk/2016/redux-middleware/</span>
 
 ---
 
