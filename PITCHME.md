@@ -13,7 +13,7 @@ Pierre Segalen
 ### React
 
 * Composants
-* Etat local / composant
+* Etat local par composant = immutable
 * JSX (balises dans le JS)
 * DOM virtuel
 
@@ -92,7 +92,7 @@ N'utiliser que les états locaux = nécessité de les synchroniser
 ### Redux
 
 * Etat applicatif
-* Découpé en sous-états appelés "Reducers"
+* Découpé en sous-états gérés par des "Reducers"
 * Reducer = fonction pure
   * `(store, action) => store`
 * Données immutables
@@ -116,7 +116,7 @@ N'utiliser que les états locaux = nécessité de les synchroniser
 
 ---
 
-### Todo list
+### Counter
 
 [Démo](https://codesandbox.io/s/github/reactjs/redux/tree/master/examples/counter)
 
