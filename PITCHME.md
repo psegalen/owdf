@@ -4,12 +4,23 @@ Pierre Segalen (@psegalen)
 
 ---
 
-### Flux Design
+### Principe
 
-* Dispatcher: Manages Data Flow
-* Stores: Handle State & Logic
-* Views: Render Data via React
+![Principe](https://raw.githubusercontent.com/psegalen/owdf/master/images/OneWayDataFlow.png)
 
 ---
 
-![Flux Explained](https://facebook.github.io/flux/img/flux-simple-f8-diagram-explained-1300w.png)
+### Render - React
+
+![Render](https://raw.githubusercontent.com/psegalen/owdf/master/images/OneWayDataFlow_render.png)
+
+---
+
+### React - Principes
+
+* Composants
+* DOM virtuel
+* Etat local
+* JSX
+
+[Exemple](https://codepen.io/gaearon/pen/amqdNA?editors=0010)
