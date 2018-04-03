@@ -17,7 +17,7 @@ Pierre Segalen
 * JSX (balises dans JS)
 * DOM virtuel
 
----?image=images/Virtual_DOM.png&size=auto 80%
+---?image=images/VirtualDOM.png&size=auto 80%
 
 ---
 
