@@ -82,7 +82,7 @@ ReactDOM.render(<Clock />, document.getElementById("root"));
 * Reducer = fonction pure
 * Données immutables
 
----?image=http://jonnyreeves.co.uk/images/2016/redux-middleware/redux-with-middleware.png&size=auto 80%
+---?image=http://jonnyreeves.co.uk/images/2016/redux-middleware/redux-with-middleware.png&size=80% auto
 
 ---
 
