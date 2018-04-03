@@ -21,7 +21,7 @@ Pierre Segalen
 * JSX (balises dans JS)
 * DOM virtuel
 
-[Exemple](https://codepen.io/gaearon/pen/amqdNA?editors=0010)
+[DOM Virtuel](http://arqex.com/wp-content/uploads/2015/02/trees.png)
 
 ---
 
@@ -71,6 +71,10 @@ ReactDOM.render(<Clock />, document.getElementById("root"));
 
 ---
 
+[Exemple](https://codepen.io/gaearon/pen/amqdNA?editors=0010)
+
+---
+
 ![State](images/OneWayDataFlow_state.png)
 
 ---
@@ -81,6 +85,10 @@ ReactDOM.render(<Clock />, document.getElementById("root"));
 * Découpé en sous-états appelés "Reducers"
 * Reducer = fonction pure
 * Données immutables
+
+---
+
+![Redux](http://jonnyreeves.co.uk/images/2016/redux-middleware/redux-with-middleware.png)
 
 ---
 
