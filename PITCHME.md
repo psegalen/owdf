@@ -17,9 +17,9 @@ Pierre Segalen
 * JSX (balises dans JS)
 * DOM virtuel
 
----?image=images/VirtualDOM.png&size=auto 80%
+---?image=images/VirtualDOM.png&size=auto 70%
 
-<span style="font-style: italic; color:#333; font-size:30px">src: https://redux.js.org</span>
+<span style="font-style: italic; font-size:25px">src: https://redux.js.org</span>
 
 ---
 
@@ -85,9 +85,9 @@ ReactDOM.render(<Clock />, document.getElementById("root"));
   * `(store, action) => store`
 * Données immutables
 
----?image=http://jonnyreeves.co.uk/images/2016/redux-middleware/redux-with-middleware.png&size=80% auto
+---?image=http://jonnyreeves.co.uk/images/2016/redux-middleware/redux-with-middleware.png&size=70% auto
 
-<span style="font-style: italic; color:#333; font-size:30px">src: http://jonnyreeves.co.uk/2016/redux-middleware/</span>
+<span style="font-style: italic; font-size:25px">src: http://jonnyreeves.co.uk/2016/redux-middleware/</span>
 
 ---
 
@@ -96,3 +96,45 @@ ReactDOM.render(<Clock />, document.getElementById("root"));
 [Démo](http://localhost:3000)
 
 ---?image=images/OneWayDataFlow_actions.png&size=auto 80%
+
+---
+
+### Middlewares Redux
+
+* Logs
+* Statistiques
+* Exécution des actions (side effects management):
+  * `redux-promise`
+  * `redux-thunk`
+  * `redux-saga`
+  * `redux-observable`
+  * `...`
+
+---
+
+### `redux-observable`
+
+* Basé sur RxJS
+* Concept central : Epics
+
+```javascript
+const pingEpic = action$ =>
+  action$
+    .ofType(PING)
+    .delay(1000) // Asynchronously wait 1000ms then continue
+    .mapTo({ type: PONG });
+```
+
+[Démo](http://jsbin.com/jexomi/edit?js,output)
+
+---
+
+### Pourquoi ?
+
+* Modularité
+  * Maintenabilité
+  * Evolutivité
+  * Testabilité
+* Flexibilité
+  * 100% agile
+* ❤️ `react-native`
