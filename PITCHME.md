@@ -79,10 +79,12 @@ ReactDOM.render(<Clock />, document.getElementById("root"));
 
 * Etat applicatif
 * Découpé en sous-états appelés "Reducers"
-* Reducer = fonction pure
+* Reducer = fonction pure `(store, action) => store`
 * Données immutables
 
 ---?image=http://jonnyreeves.co.uk/images/2016/redux-middleware/redux-with-middleware.png&size=80% auto
+
+[source: http://jonnyreeves.co.uk/2016/redux-middleware/](http://jonnyreeves.co.uk/2016/redux-middleware/)
 
 ---
 
