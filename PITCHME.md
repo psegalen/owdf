@@ -6,11 +6,11 @@ Pierre Segalen
 
 ---
 
-![Principe](images/OneWayDataFlow.png)
+---?image=images/OneWayDataFlow.png&size=auto 80%
 
 ---
 
-![Render](images/OneWayDataFlow_render.png)
+---?image=images/OneWayDataFlow_render.png&size=auto 90%
 
 ---
 
@@ -21,7 +21,7 @@ Pierre Segalen
 * JSX (balises dans JS)
 * DOM virtuel
 
-[DOM Virtuel](http://arqex.com/wp-content/uploads/2015/02/trees.png)
+![DOM Virtuel](http://arqex.com/wp-content/uploads/2015/02/trees.png)
 
 ---
 
