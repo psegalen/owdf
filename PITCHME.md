@@ -6,7 +6,7 @@ Pierre Segalen
 
 ---?image=images/OneWayDataFlow.png&size=auto 80%
 
----?image=images/OneWayDataFlow_render.png&size=auto 90%
+---?image=images/OneWayDataFlow_render.png&size=auto 80%
 
 ---
 
@@ -17,7 +17,7 @@ Pierre Segalen
 * JSX (balises dans JS)
 * DOM virtuel
 
-![DOM Virtuel](http://arqex.com/wp-content/uploads/2015/02/trees.png)
+---?image=http://arqex.com/wp-content/uploads/2015/02/trees.png.png&size=auto 80%&color=white
 
 ---
 
@@ -67,11 +67,11 @@ ReactDOM.render(<Clock />, document.getElementById("root"));
 
 ---
 
-[Exemple](https://codepen.io/gaearon/pen/amqdNA?editors=0010)
+### Clock
 
----
+[Démo](https://codepen.io/gaearon/pen/amqdNA?editors=0010)
 
-![State](images/OneWayDataFlow_state.png)
+---?image=images/OneWayDataFlow_state.png&size=auto 80%
 
 ---
 
@@ -82,10 +82,12 @@ ReactDOM.render(<Clock />, document.getElementById("root"));
 * Reducer = fonction pure
 * Données immutables
 
----
-
-![Redux](http://jonnyreeves.co.uk/images/2016/redux-middleware/redux-with-middleware.png)
+---?image=http://jonnyreeves.co.uk/images/2016/redux-middleware/redux-with-middleware.png&size=auto 80%
 
 ---
 
-![Actions](images/OneWayDataFlow_actions.png)
+### Todo list
+
+[Démo](http://localhost:3000)
+
+---?image=images/OneWayDataFlow_actions.png&size=auto 80%
