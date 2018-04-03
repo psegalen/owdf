@@ -61,7 +61,7 @@ ReactDOM.render(<Clock />, document.getElementById("root"));
 
 @[31](Rendu en JSX d'un composant Clock)
 @[2-5](Initialisation de l'état local)
-@[7--13](Cycle de vie de l'instance du composant)
+@[7-13](Cycle de vie de l'instance du composant)
 @[15-19](Appelé dans le setInterval déclaré dans componentDidMount)
 @[21-28](Rendu du composant)
 
