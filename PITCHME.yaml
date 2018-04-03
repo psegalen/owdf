@@ -7,7 +7,6 @@
 theme : night
 theme-override : assets/css/PITCHME.css
 # theme-override : assets/css/PITCHME.codemax.css
-logo : images/logo.gif
 highlight : atom-one-light
 transition : none
 published : true
