@@ -94,6 +94,10 @@ N'utiliser que les états locaux = nécessité de les synchroniser
   * `(store, action) => store`
 * Données immutables
 
+---?image=http://jonnyreeves.co.uk/images/2016/redux-middleware/redux-with-middleware.png&size=70% auto
+
+<span style="font-style: italic; font-size:25px">src: http://jonnyreeves.co.uk/2016/redux-middleware/</span>
+
 ---
 
 ### Un reducer
@@ -124,17 +128,13 @@ const todos = (state = [], action) => {
 @[1](Signature de tout reducer)
 @[2](La logique du reducer dépend du type d'action)
 @[3-16](Les données sont toujours immutables)
-@[17-18](Toutes les actions passent dans tous les reducers => toujours renvoyer le state inchangé quand le reducer ne gère pas l'action)
+@[17-18](Toutes les actions passent dans tous les reducers => il faut toujours renvoyer le state inchangé quand le reducer ne gère pas l'action)
 
 ---
 
 ### Counter
 
 [Démo](https://codesandbox.io/s/github/reactjs/redux/tree/master/examples/counter)
-
----?image=http://jonnyreeves.co.uk/images/2016/redux-middleware/redux-with-middleware.png&size=70% auto
-
-<span style="font-style: italic; font-size:25px">src: http://jonnyreeves.co.uk/2016/redux-middleware/</span>
 
 ---
 
