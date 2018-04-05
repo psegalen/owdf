@@ -155,7 +155,8 @@ const todos = (state = [], action) => {
 
 ### `redux-observable`
 
-* Basé sur RxJS
+* Basé sur RxJS (programmation réactive, pattern Observable)
+* Gestion du code asynchrone
 * Concept central : Epics
 
 ```javascript
