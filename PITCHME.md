@@ -13,9 +13,9 @@ Pierre Segalen
 ### React
 
 * Composants
-* Etat local par composant = immutable
 * JSX (balises dans le JS)
 * DOM virtuel
+* Etat local / propriétés = immutable
 
 ---?image=images/VirtualDOM.png&size=auto 70%
 
@@ -167,6 +167,20 @@ const pingEpic = action$ =>
 ```
 
 [Démo](http://jsbin.com/jexomi/edit?js,output)
+
+---
+
+### Un problème récurrent : annuler une requête
+
+```javascript
+const fetchUserEpic = action$ =>
+  action$.ofType(FETCH_USER).mergeMap(action =>
+    ajax
+      .getJSON(`/api/users/${action.payload}`)
+      .map(response => fetchUserFulfilled(response))
+      .takeUntil(action$.ofType(FETCH_USER_CANCELLED))
+  );
+```
 
 ---
 
