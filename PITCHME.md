@@ -55,11 +55,8 @@ class Clock extends React.Component {
     );
   }
 }
-
-ReactDOM.render(<Clock />, document.getElementById("root"));
 ```
 
-@[31](Rendu en JSX d'un composant Clock)
 @[2-5](Initialisation de l'état local)
 @[7-13](Cycle de vie de l'instance du composant)
 @[15-19](Appelé dans le setInterval déclaré dans componentDidMount)
@@ -69,7 +66,7 @@ ReactDOM.render(<Clock />, document.getElementById("root"));
 
 ### Clock
 
-[Démo](https://codepen.io/gaearon/pen/amqdNA?editors=0010)
+[Démo](https://codepen.io/psegalen/pen/GxYRqm?editors=0010)
 
 ---
 
@@ -97,6 +94,44 @@ N'utiliser que les états locaux = nécessité de les synchroniser
   * `(store, action) => store`
 * Données immutables
 
+---
+
+### Un reducer
+
+```javascript
+const todos = (state = [], action) => {
+  switch (action.type) {
+    case "ADD_TODO":
+      return [
+        ...state,
+        {
+          id: action.id,
+          text: action.text,
+          completed: false
+        }
+      ];
+    case "TOGGLE_TODO":
+      return state.map(
+        todo =>
+          todo.id === action.id ? { ...todo, completed: !todo.completed } : todo
+      );
+    default:
+      return state;
+  }
+};
+```
+
+@[1](Signature de tout reducer)
+@[2](La logique du reducer dépend du type d'action)
+@[3-16](Les données sont toujours immutables)
+@[17-18](Toutes les actions passent dans tous les reducers => toujours renvoyer le state inchangé quand le reducer ne gère pas l'action)
+
+---
+
+### Counter
+
+[Démo](https://codesandbox.io/s/github/reactjs/redux/tree/master/examples/counter)
+
 ---?image=http://jonnyreeves.co.uk/images/2016/redux-middleware/redux-with-middleware.png&size=70% auto
 
 <span style="font-style: italic; font-size:25px">src: http://jonnyreeves.co.uk/2016/redux-middleware/</span>
@@ -113,12 +148,6 @@ N'utiliser que les états locaux = nécessité de les synchroniser
   * `redux-saga`
   * `redux-observable`
   * `...`
-
----
-
-### Counter
-
-[Démo](https://codesandbox.io/s/github/reactjs/redux/tree/master/examples/counter)
 
 ---?image=images/OneWayDataFlow_actions.png&size=auto 80%
 
