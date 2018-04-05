@@ -72,13 +72,13 @@ class Clock extends React.Component {
 
 ### ⚠️ Synchronisation des états
 
-Plusieurs composants peuvent partager une données
+Plusieurs composants peuvent partager les mêmes données
 
 Exemple, site de e-commerce :
 
-* Bouton "Ajout panier"
-* Bouton "Panier header"
-* Page "Panier"
+* Bouton d'ajout au panier
+* Bouton Panier dans le header
+* Page Panier
 
 N'utiliser que les états locaux = nécessité de les synchroniser
 
