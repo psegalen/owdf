@@ -91,7 +91,7 @@ N'utiliser que les états locaux = nécessité de les synchroniser
 * Etat applicatif
 * Découpé en sous-états gérés par des "Reducers"
 * Reducer = fonction pure
-  * `(store, action) => store`
+  * `(state, action) => state`
 * Données immutables
 
 ---?image=http://jonnyreeves.co.uk/images/2016/redux-middleware/redux-with-middleware.png&size=70% auto
